@@ -22,7 +22,7 @@ public class Val1AndVal2MapTest {
     }
 
     @Test
-    public void val1AndVal2MapSuccess() {
+    public void val1AndVal2MapSuccess1() {
         LinkedHashMap map = new LinkedHashMap();
 
         map.put("val1","java");
@@ -31,6 +31,22 @@ public class Val1AndVal2MapTest {
 
         map1.put("val1"," ");
         map1.put("val2","java");
+
+        LinkedHashMap actual = val1AndVal2Map.val1AndVal2Map(map);
+        LinkedHashMap expected = map1;
+        assertEquals(expected,actual);
+    }
+
+    @Test
+    public void val1AndVal2MapSuccess2() {
+        LinkedHashMap map = new LinkedHashMap();
+
+        map.put("key1","apple");
+        map.put("key2","banana");
+        LinkedHashMap map1 = new LinkedHashMap();
+
+        map1.put("key1"," ");
+        map1.put("key2","apple");
 
         LinkedHashMap actual = val1AndVal2Map.val1AndVal2Map(map);
         LinkedHashMap expected = map1;

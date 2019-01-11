@@ -22,7 +22,7 @@ public class SortTheNamesTest {
     }
 
     @Test
-    public void sortTheNamesSuccess() {
+    public void sortTheNamesSuccess1() {
         String[] names = {"Harry","Olive","Alice","Bluto","Eugene"};
         ArrayList actual = sortTheNames.sortTheNames(names);
         ArrayList expected = new ArrayList();
@@ -33,7 +33,18 @@ public class SortTheNamesTest {
         expected.add("Olive");
         assertEquals(expected,actual);
     }
-
+    @Test
+    public void sortTheNamesSuccess2() {
+        String[] names = {"Aaksh","Raj","Atul","Vijay","Ramesh"};
+        ArrayList actual = sortTheNames.sortTheNames(names);
+        ArrayList expected = new ArrayList();
+        expected.add("Aakash");
+        expected.add("Atul");
+        expected.add("Raj");
+        expected.add("Ramesh");
+        expected.add("Vijay");
+        assertNotEquals(expected,actual);
+    }
     @Test
     public void sortTheNamesFail() {
         String[] names = {"Rahul","Ajay","Alice","Bluto","Eugene"};

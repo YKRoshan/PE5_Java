@@ -34,8 +34,21 @@ public class StoreStringInMapTest {
 
     }
     @Test
-    public void storeStringInMapFail() {
+    public void storeStringInMapFail1() {
         String []keys = {"a","b","c","d","a","c","c","d"};
+        HashMap actual =storeStringInMap.storeStringInMap(keys);
+        HashMap expeced = new HashMap();
+        expeced.put("a",true);
+        expeced.put("b",false);
+        expeced.put("c",true);
+        expeced.put("d",false);
+        assertNotEquals(expeced,actual);
+
+    }
+
+    @Test
+    public void storeStringInMapFail2() {
+        String []keys = {""};
         HashMap actual =storeStringInMap.storeStringInMap(keys);
         HashMap expeced = new HashMap();
         expeced.put("a",true);

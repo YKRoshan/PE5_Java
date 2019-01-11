@@ -6,6 +6,8 @@ import java.util.regex.*;
 
 public class FindNumberOfCount {
     public String findNumberOfCount(String input){
+        if(input.isEmpty())
+            return null;
 
         Pattern pattern1 = Pattern.compile("one");
         Matcher matcher1 = pattern1.matcher(input);

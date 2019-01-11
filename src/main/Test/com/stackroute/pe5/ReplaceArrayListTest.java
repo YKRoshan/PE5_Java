@@ -21,7 +21,18 @@ public class ReplaceArrayListTest {
     }
 
     @Test
-    public void replaceArrayListSuccess() {
+    public void replaceArrayListSuccess1() {
+        ArrayList<String> actual = replaceArrayList.replaceArrayList();
+        ArrayList<String> expected = new ArrayList<>();
+        expected.add("Kiwi");
+        expected.add("Grape");
+        expected.add("Mango");
+        expected.add("Berry");
+        assertEquals(expected,actual);
+    }
+
+    @Test
+    public void replaceArrayListSuccess2() {
         ArrayList<String> actual = replaceArrayList.replaceArrayList();
         ArrayList<String> expected = new ArrayList<>();
         expected.add("Kiwi");
@@ -31,7 +42,7 @@ public class ReplaceArrayListTest {
         assertEquals(expected,actual);
     }
     @Test
-    public void replaceArrayListFail() {
+    public void replaceArrayListFail1() {
         ArrayList<String> actual = replaceArrayList.replaceArrayList();
         ArrayList<String> expected = new ArrayList<>();
         expected.add("Kiwi");
@@ -41,4 +52,14 @@ public class ReplaceArrayListTest {
         assertNotEquals(expected,actual);
     }
 
+    @Test
+    public void replaceArrayListFail2() {
+        ArrayList<String> actual = replaceArrayList.replaceArrayList();
+        ArrayList<String> expected = new ArrayList<>();
+        expected.add("Banana");
+        expected.add("Grape");
+        expected.add("Orange");
+        expected.add("Berry");
+        assertNotEquals(expected,actual);
+    }
 }
