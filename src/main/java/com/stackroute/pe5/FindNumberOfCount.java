@@ -39,10 +39,4 @@ public class FindNumberOfCount {
         }
         return result;
     }
-    public static void main(String []args){
-        FindNumberOfCount ob = new FindNumberOfCount();
-        //List<String> list = new ArrayList<String>();
-        String str = "one one -one___two,,three,one @three*one?two";
-        System.out.println(ob.findNumberOfCount(str));
-    }
 }

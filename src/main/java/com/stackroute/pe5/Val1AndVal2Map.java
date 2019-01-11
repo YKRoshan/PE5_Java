@@ -22,14 +22,4 @@ public class Val1AndVal2Map {
 
         return map;
     }
-//    public static void main(String []args){
-//       LinkedHashMap map = new LinkedHashMap();
-//
-//       map.put("val1","java");
-//        map.put("val2","c++");
-//        System.out.println(map);
-//
-//        map=val1AndVal2Map(map);
-//        System.out.println(map);
-//    }
 }

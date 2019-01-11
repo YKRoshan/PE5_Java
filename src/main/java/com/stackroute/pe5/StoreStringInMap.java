@@ -21,16 +21,8 @@ public class StoreStringInMap {
                 map.put(keys[i],false);
             }
             }
-
         }
 
         return map;
-    }
-
-    public static void main(String []args){
-        StoreStringInMap ob = new StoreStringInMap();
-        String []keys = {"a","b","c","d","a","c","c"};
-        HashMap map = ob.storeStringInMap(keys);
-            System.out.println(map);
     }
 }

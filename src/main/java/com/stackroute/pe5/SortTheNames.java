@@ -15,8 +15,4 @@ public class SortTheNames {
         ArrayList list = new ArrayList(set);
         return list;
     }
-//    public static void main(String[] args){
-//        String[] names = {"Harry","Olive","Alice","Bluto","Eugene"};
-//        sortTheNames(names);
-//    }
 }
