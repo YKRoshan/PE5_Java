@@ -1,7 +1,9 @@
 package com.stackroute.pe5;
+/*Write a program to find the number of counts in the following String . Store the output in
+Map< String ,Integer> as key value pair.
+Input : String str = “one one -one___two,,three,one @three*one?two”;
+Output : {"one":5 , "two":2, "three" :2}*/
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.*;
 
 public class FindNumberOfCount {
