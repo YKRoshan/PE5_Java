@@ -1,4 +1,4 @@
-package com.stackroute.Test.com.stackroute.pe5;
+package com.stackroute.pe5;
 
 import com.stackroute.pe5.Val1AndVal2Map;
 import org.junit.After;

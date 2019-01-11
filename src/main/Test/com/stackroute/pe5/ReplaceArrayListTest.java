@@ -1,4 +1,4 @@
-package com.stackroute.Test.com.stackroute.pe5;
+package com.stackroute.pe5;
 
 import com.stackroute.pe5.ReplaceArrayList;
 import org.junit.After;
