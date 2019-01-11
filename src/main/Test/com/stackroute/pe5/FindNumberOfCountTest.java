@@ -21,10 +21,18 @@ public class FindNumberOfCountTest {
 
 
     @Test
-    public void findNumberOfCount() {
+    public void findNumberOfCountSuccess() {
         String str = "one one -one___two,,three,one @three*one?two";
         String actual = findNumberOfCount.findNumberOfCount(str);
         String expected = "one:5,two:2,three:2";
         assertEquals(expected,actual);
+    }
+
+    @Test
+    public void findNumberOfCountFail() {
+        String str = "one one -one___two,,three,one @three*one?two";
+        String actual = findNumberOfCount.findNumberOfCount(str);
+        String expected = "one:5,two:3,three:2";
+        assertNotEquals(expected,actual);
     }
 }
