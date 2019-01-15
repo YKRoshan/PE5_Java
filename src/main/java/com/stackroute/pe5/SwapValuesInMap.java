@@ -16,7 +16,7 @@ have the value `" "` (empty string ).
 "val2": "c++"} should return {"val1": " ", "val2":
 "val2": "saturn"}
 should return {"val1": " ", "val2":*/
-public class Val1AndVal2Map {
+public class SwapValuesInMap {
     public  LinkedHashMap val1AndVal2Map(LinkedHashMap inputMap){
         if(inputMap.size()<2 || inputMap.size()>2)
             return null;

@@ -10,12 +10,12 @@ import static org.junit.Assert.*;
 public class FindNumberOfCountTest {
     FindNumberOfCount findNumberOfCount;
     @Before
-    public void setUp() throws Exception {
+    public void setUp(){
         findNumberOfCount = new FindNumberOfCount();
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         findNumberOfCount = null;
     }
 

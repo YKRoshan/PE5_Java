@@ -1,6 +1,5 @@
 package com.stackroute.pe5;
 
-import com.stackroute.pe5.Val1AndVal2Map;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,15 +8,15 @@ import java.util.LinkedHashMap;
 
 import static org.junit.Assert.*;
 
-public class Val1AndVal2MapTest {
-    Val1AndVal2Map val1AndVal2Map;
+public class SwapValuesInMapTest {
+    SwapValuesInMap val1AndVal2Map;
     @Before
-    public void setUp() throws Exception {
-    val1AndVal2Map = new Val1AndVal2Map();
+    public void setUp() {
+    val1AndVal2Map = new SwapValuesInMap();
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
     val1AndVal2Map = null;
     }
 
